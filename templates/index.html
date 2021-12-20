@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>HEART DISEASE PREDICTION SYSTEM</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Hind:300" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/static/css/style.css">
+  </head>
+  <body style="
+    text-align: center;
+    ">
+    <header>
+      <h2 style="border-top: 150px;color: white">HEART DISEASE PREDICTION SYSTEM</h2>
+    </header>
+    <form action="/predict" method="post">
+      <h2 style="border-top: 2px;color: blue">Heart Diseases Predictor</h2>
+      <div class="login-box">
+        <div class="textbox">
+          <input type="text" name="male" placeholder="Male" required="required">
+        </div>
+        <div class="textbox">
+          <input type="text" name="age" placeholder="Age" required="required">
+        </div>
+        <div class="textbox">
+          <input type="text" name="education" placeholder="Education" required="required">
+        </div>
+        <div class="textbox">
+          <input type="text" name="currentSmoker" placeholder="Smoker or not" required="required">
+        </div>
+        <div class="textbox">
+          <input type="text" name="cigsPerDay" placeholder="cigratees per day" required="required">
+        </div>
+        <div class="textbox">
+          <input type="text" name="BPmeds" placeholder="taking medicine or not" required="required">
+        </div>
+        <div class="textbox">
+          <input type="text" name="prevalentStroke" placeholder="Prevalent Stroke" required="required">
+        </div>
+        <div class="textbox">
+          <input type="text" name="prevalentHyp" placeholder="Prevalent Hyp" required="required">
+        </div>
+        <div class="textbox">
+          <input type="text" name="diabetes" placeholder="Diabetes" required="required">
+        </div>
+        <div class="textbox">
+          <input type="text" name="totChol" placeholder="Total Cholestrol Level" required="required">
+        </div>
+        <div class="textbox">
+          <input type="text" name="sysBP" placeholder="Systolic Blood Pressure" required="required">
+        </div>
+        <div class="textbox">
+          <input type="text" name="diaBP" placeholder="Diastolic Blood Pressure" required="required">
+        </div>
+        <div class="textbox">
+          <input type="text" name="BMI" placeholder="BMI(Body Mass Index)" required="required">
+        </div>
+        <div class="textbox">
+          <input type="text" name="heartRate" placeholder="Heart Rate" required="required">
+        </div>
+        <div class="textbox">
+          <input type="text" name="glucose" placeholder="Glucose Level" required="required">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        <div class="result">
+          <b>{{ prediction_text }}</b>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
