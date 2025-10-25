@@ -1,12 +1,11 @@
-# ❤️ Cardio Monitor System
+# ❤️ Heart Disease Prediction System
 
 > A Flask-based web app that predicts heart disease risk with **92% accuracy** using machine learning.
 
 ---
 
 ## 🩺 Overview
-Cardio Monitor System analyzes user health data (age, cholesterol, blood pressure, etc.) and predicts heart disease risk in real time.  
-Built with **Flask**, **Scikit-learn**, and **XGBoost**, it delivers fast, accurate, and interactive insights through a simple web interface.
+Predicts heart disease risk in real time. Built with **Flask**, **Scikit-learn**, and **XGBoost**, it delivers fast, accurate, and interactive insights through a simple web interface.
 
 ---
 
