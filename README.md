@@ -17,10 +17,3 @@ Predicts heart disease risk in real time. Built with **Flask**, **Scikit-learn**
 - **Deployment:** Gunicorn  
 
 ---
-
-## 🚀 Setup
-```bash
-git clone https://github.com/yourusername/Cardio-Monitor-System.git
-cd Cardio-Monitor-System
-pip install -r requirements.txt
-flask run
